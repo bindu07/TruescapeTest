@@ -1,0 +1,9 @@
+<app-premining *ngIf="isChecked"></app-premining>
+<app-mining *ngIf="!isChecked"></app-mining>
+
+
+
+<div class="toggle">
+  <div>Click here to Toggle between Mining and Premining</div>
+  <mat-slide-toggle [(ngModel)]="isChecked"> </mat-slide-toggle>
+</div>
